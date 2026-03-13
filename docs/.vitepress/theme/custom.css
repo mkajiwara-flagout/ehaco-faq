@@ -1,0 +1,217 @@
+/* ===== ehaco! Brand Colors ===== */
+:root {
+  --vp-c-brand-1: #3aafda;
+  --vp-c-brand-2: #2e9bc2;
+  --vp-c-brand-3: #2387ab;
+  --vp-c-brand-soft: rgba(58, 175, 218, 0.14);
+  --participant-color: #4aad9e;
+  --participant-color-light: #d6f0ec;
+  --organizer-color: #3aafda;
+  --organizer-color-light: #daf0f9;
+}
+
+.dark {
+  --vp-c-brand-1: #4abfe8;
+  --vp-c-brand-2: #3aafda;
+  --vp-c-brand-3: #2e9bc2;
+  --vp-c-brand-soft: rgba(58, 175, 218, 0.16);
+}
+
+/* ===== Header Logo Sizing ===== */
+.VPNavBarTitle .logo {
+  height: 28px;
+  width: auto;
+}
+
+/* ===== Table Styling ===== */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.vp-doc tr:nth-child(even) {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.vp-doc tr:hover {
+  background-color: var(--vp-c-bg-mute);
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+/* ===== Image Framing ===== */
+.vp-doc img {
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--vp-c-divider);
+  margin: 16px 0;
+}
+
+/* ===== H2 Left Border Accent ===== */
+/* Participant section */
+.vp-doc[class*="participant"] h2,
+[class*="participant"] .vp-doc h2 {
+  border-left: 4px solid var(--participant-color);
+  padding-left: 12px;
+}
+
+/* Organizer section */
+.vp-doc[class*="organizer"] h2,
+[class*="organizer"] .vp-doc h2 {
+  border-left: 4px solid var(--organizer-color);
+  padding-left: 12px;
+}
+
+/* Fallback: detect section from URL via body data attribute */
+body[data-section="participant"] .vp-doc h2 {
+  border-left: 4px solid var(--participant-color);
+  padding-left: 12px;
+}
+
+body[data-section="organizer"] .vp-doc h2 {
+  border-left: 4px solid var(--organizer-color);
+  padding-left: 12px;
+}
+
+/* ===== Callout / Custom Block Enhancements ===== */
+.vp-doc .custom-block.warning {
+  border-color: #f59e0b;
+}
+
+.vp-doc .custom-block.tip {
+  border-color: var(--participant-color);
+}
+
+/* ===== Step Card Component Styles ===== */
+.step-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.2s ease;
+  background: var(--vp-c-bg);
+  position: relative;
+}
+
+.step-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.step-card .step-number {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--vp-c-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step-card .step-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.step-card .step-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--vp-c-text-1);
+  line-height: 1.4;
+}
+
+/* ===== Link Card Component Styles ===== */
+.link-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.link-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.2s ease;
+  background: var(--vp-c-bg);
+}
+
+.link-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.link-card .link-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.link-card .link-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.link-card .link-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin-bottom: 4px;
+}
+
+.link-card .link-description {
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+
+/* ===== Section Heading Styling ===== */
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 32px 0 16px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+
+.section-heading .section-icon {
+  font-size: 24px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .step-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .link-cards {
+    grid-template-columns: 1fr;
+  }
+}
