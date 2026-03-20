@@ -34,4 +34,4 @@ ehaco! のログイン画面（ https://ehaco.net/login ）にアクセスしま
 
 ## それでも解決しない場合
 
-パスワードリセットがうまくいかない場合は、[お問い合わせフォーム](/participant/faq/contact)よりご連絡ください。
+パスワードリセットがうまくいかない場合は、[運営へのお問い合わせ](/participant/faq/contact-support)よりご連絡ください。

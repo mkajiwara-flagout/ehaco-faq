@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import StepCard from './components/StepCard.vue'
 import LinkCard from './components/LinkCard.vue'
+import SearchTags from './components/SearchTags.vue'
 import './custom.css'
 
 export default {
@@ -9,5 +10,6 @@ export default {
   enhanceApp({ app }) {
     app.component('StepCard', StepCard)
     app.component('LinkCard', LinkCard)
+    app.component('SearchTags', SearchTags)
   },
 } satisfies Theme

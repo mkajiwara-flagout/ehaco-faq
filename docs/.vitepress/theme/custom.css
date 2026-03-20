@@ -205,6 +205,56 @@ body[data-section="organizer"] .vp-doc h2 {
   font-size: 24px;
 }
 
+/* ===== Search Tags Component Styles ===== */
+.search-tags-container {
+  margin: 20px 0 28px;
+  padding: 20px;
+  background: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.search-tags-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  margin-bottom: 12px;
+}
+
+.search-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.search-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.search-tag:hover {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.search-tag:active {
+  transform: translateY(0);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 640px) {
   .step-cards {

@@ -28,5 +28,5 @@ features:
   - icon: ❓
     title: よくある質問
     details: イベントのキャンセル方法やアカウント情報の取り扱いなど、よくある質問にお答えします。
-    link: /participant/faq/cancel-event
+    link: /participant/faq/
 ---

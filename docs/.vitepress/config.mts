@@ -9,6 +9,7 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/ehaco-faq/favicon.png' }],
+    ['meta', { name: 'robots', content: 'noindex, nofollow' }],
   ],
 
   themeConfig: {
@@ -51,6 +52,7 @@ export default defineConfig({
         },
         {
           text: '❓ よくある質問',
+          link: '/participant/faq/',
           collapsed: false,
           items: [
             { text: '❌ イベントへの参加を取り止めたい', link: '/participant/faq/cancel-event' },
@@ -58,6 +60,8 @@ export default defineConfig({
             { text: '📞 主催企業へのお問い合わせ', link: '/participant/faq/contact' },
             { text: '🏛️ 運営へのお問い合わせ', link: '/participant/faq/contact-support' },
             { text: '🔄 パスワードリセット方法', link: '/participant/faq/password-reset' },
+            { text: '🔧 よくあるトラブルと解決方法', link: '/participant/faq/troubleshooting' },
+            { text: '🖥️ 推奨ブラウザ・動作環境', link: '/participant/faq/system-requirements' },
             { text: '💡 ehaco! とは', link: '/participant/faq/about-ehaco' },
             { text: '📜 利用規約・プライバシーポリシー', link: '/participant/faq/terms' },
           ],
@@ -79,6 +83,7 @@ export default defineConfig({
           text: '📖 メニュー別機能',
           collapsed: false,
           items: [
+            { text: '🖥️ 管理画面の概要', link: '/organizer/features/dashboard' },
             { text: '📊 アンケートの機能', link: '/organizer/features/survey' },
             { text: '🎯 ターゲットの機能', link: '/organizer/features/target' },
             { text: '🏢 主催者情報の機能', link: '/organizer/features/organizer-info' },
@@ -89,11 +94,13 @@ export default defineConfig({
         },
         {
           text: '❓ よくある質問',
+          link: '/organizer/faq/',
           collapsed: false,
           items: [
             { text: '📞 参加者からの問い合わせ受付', link: '/organizer/faq/contact' },
             { text: '🏛️ 運営へのお問い合わせ', link: '/organizer/faq/contact-support' },
             { text: '🔄 パスワードリセット方法', link: '/organizer/faq/password-reset' },
+            { text: '💡 イベント作成のコツ', link: '/organizer/faq/event-tips' },
             { text: '💡 ehaco! とは', link: '/participant/faq/about-ehaco' },
             { text: '📜 利用規約・プライバシーポリシー', link: '/participant/faq/terms' },
           ],
