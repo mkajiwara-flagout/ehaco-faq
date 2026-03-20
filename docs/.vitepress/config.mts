@@ -5,10 +5,10 @@ export default defineConfig({
   description: 'ehaco! イベント検索サービスのヘルプセンター',
   lang: 'ja',
   lastUpdated: true,
-  base: '/ehaco-faq/',
+  base: '/',
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/ehaco-faq/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'robots', content: 'noindex, nofollow' }],
   ],
 
